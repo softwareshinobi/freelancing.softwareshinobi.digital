@@ -10,7 +10,7 @@ services:
 
         image: softwareshinobi/software-shinobi-freelancing
       
-        ## restart: "never"
+        restart: "always"
 
         ports:
 
