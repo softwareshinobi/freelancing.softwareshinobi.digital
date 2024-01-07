@@ -6,18 +6,12 @@ services:
 
         container_name: software-shinobi-freelancing
 
-        image: titom73/mkdocs
-      
-##        restart: "never"
+        build: .
 
-        volumes:
-        
-            - ${PWD}:/docs/project-documentation
-            
-            ##- ${PWD}/.mkdocs.yml:/mkdocs.yml
-            
-            - ${PWD}/mkdocs.yml:/docs/mkdocs.yml
-            
+        image: softwareshinobi/software-shinobi-freelancing
+      
+        ## restart: "never"
+
         ports:
 
-            - 8888:8000
+            - 8889:80
