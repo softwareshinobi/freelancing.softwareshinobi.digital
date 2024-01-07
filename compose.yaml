@@ -1,0 +1,21 @@
+version: "3"
+
+services:
+
+    software-shinobi-planning:
+
+        container_name: software-shinobi-planning
+
+        image: titom73/mkdocs
+      
+        restart: "always"
+
+        volumes:
+        
+            - ${PWD}:/docs/project-documentation           
+            
+            - ${PWD}/mkdocs.yml:/docs/mkdocs.yml
+            
+        ports:
+
+            - 80:8000

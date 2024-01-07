@@ -1,0 +1,45 @@
+
+docs_dir: project-documentation
+
+site_name: Software Shinobi Freelancing
+
+nav:
+
+    - Home: 'index.md'
+       
+    - WordPress Sites: 'freelancing/wordpress-sites.md'
+
+    - Pricing: 'freelancing/pricing.md'
+
+    - Contact: 'outreach/contact-softwareshinobi.md'       
+        
+ ##    - Portfolio: 'developer-guides/software-architecture-guide.md'
+ ##    - Blog: 'developer-guides/installation-guide.md'
+ ##   - About: 'developer-guides/getting-started-guide.md'
+
+theme:
+
+    ##
+    ## Find More Themes Here:
+    ##
+    ##     https://mkdocs.github.io/mkdocs-bootswatch/
+    ##
+    ## List of theme values:
+    ##
+    ##     mkdocs, readthedocs, material, cerulean, cosmo, 
+    ##     cyborg, darkly, flatly, journal, litera, lumen, lux,
+    ##     materia, minty, pulse, sandstone, simplex, slate, solar,
+    ##     spacelab, superhero, united, yeti 
+    ##
+        
+    name: lux
+    
+    ## 
+    ## you can alternate colors for the navigation header.
+    ##
+    ## Allowed values: primary (the default), dark, and light:
+    ##
+    
+    nav_style: primary
+
+extra_css: [extra.css]
