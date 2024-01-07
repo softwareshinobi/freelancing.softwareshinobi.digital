@@ -2,20 +2,22 @@ version: "3"
 
 services:
 
-    software-shinobi-planning:
+    software-shinobi-freelancing:
 
-        container_name: software-shinobi-planning
+        container_name: software-shinobi-freelancing
 
         image: titom73/mkdocs
       
-        restart: "always"
+##        restart: "never"
 
         volumes:
         
-            - ${PWD}:/docs/project-documentation           
+            - ${PWD}:/docs/project-documentation
+            
+            ##- ${PWD}/.mkdocs.yml:/mkdocs.yml
             
             - ${PWD}/mkdocs.yml:/docs/mkdocs.yml
             
         ports:
 
-            - 80:8000
+            - 8888:8000
